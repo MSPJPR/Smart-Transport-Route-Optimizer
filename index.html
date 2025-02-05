@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Transport Route Optimizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Transport Route Optimizer</h1>
+        <label for="locations">Enter Locations (comma-separated):</label>
+        <input type="text" id="locations" placeholder="A, B, C, D">
+        
+        <label for="costs">Enter Cost Matrix (comma-separated row-wise):</label>
+        <input type="text" id="costs" placeholder="8,6,10,9,7,4,6,3">
+        
+        <button onclick="calculateOptimalRoute()">Optimize Route</button>
+        
+        <h2>Optimized Transport Route:</h2>
+        <p id="result"></p>
+        
+        <h2>Past Optimized Routes:</h2>
+        <ul id="history"></ul>
+
+        <h2>Live Traffic Prediction:</h2>
+        <p id="traffic">Fetching traffic data...</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
